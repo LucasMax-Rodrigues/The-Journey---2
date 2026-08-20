@@ -1,0 +1,138 @@
+body {
+    background-color: burlywood;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#inpt1, #inpt2 {
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    outline: none;
+    width: 220px;
+    text-align: center;
+}
+
+.btnPlus {
+    font-size: 24px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #222;
+    cursor: pointer;
+}
+
+#btnPlus:hover {
+    background-color: #c8e6c9;
+}
+
+#btnPlus:active {
+    transform: scale(0.95);
+}
+
+.btnMinus {
+    font-size: 24px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #222;
+    cursor: pointer;
+}
+
+#btnMinus:hover {
+    background-color: #ffcdd2;
+}
+
+#btnMinus:active {
+    transform: scale(0.95);
+}
+
+.btnTimes {
+    font-size: 24px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #222;
+    cursor: pointer;
+}
+
+#btnTimes:hover {
+    background-color: #bbdefb;
+}
+
+#btnTimes:active {
+    transform: scale(0.95);
+}
+
+.btnDivided {
+    font-size: 24px;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    color: #222;
+    cursor: pointer;
+}
+
+#btnDivided:hover {
+    background-color: #ffe0b2;
+}
+
+#btnDivided:active {
+    transform: scale(0.95);
+}
+
+#btnClear {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 24px;
+    margin-top: 15px;
+    border: 2px solid #b71c1c;
+    border-radius: 8px;
+    background-color: #e53935;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#btnClear:hover {
+    background-color: #c62828;
+}
+
+#btnClear:active {
+    transform: scale(0.95);
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
