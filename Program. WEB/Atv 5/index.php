@@ -1,5 +1,5 @@
 <?php
-// Se a requisição for POST, processa e salva os dados no JSON
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header('Content-Type: application/json; charset=utf-8');
 
@@ -14,13 +14,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $arquivo = 'usuarios.json';
     $listaUsuarios = [];
 
-    // Lê os dados anteriores se o arquivo já existir
+    
     if (file_exists($arquivo)) {
         $conteudoAtual = file_get_contents($arquivo);
         $listaUsuarios = json_decode($conteudoAtual, true) ?? [];
     }
 
-    // Salva o novo usuário
+    
     $listaUsuarios[] = $dadosRecebidos;
 
     if (file_put_contents($arquivo, json_encode($listaUsuarios, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo json_encode(['sucesso' => false, 'mensagem' => 'Erro ao gravar os dados.']);
     }
-    exit; // Encerra para não renderizar o HTML na resposta do fetch
+    exit;
 }
 ?>
 
@@ -89,14 +89,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         telefone: document.getElementById('telefone').value.trim()
       };
 
-      // 2. Validação no JS (verifica se todos existem e estão preenchidos)
+      
       if (!dados.nome || !dados.email || !dados.idade || !dados.cidade || !dados.telefone) {
         msg.style.color = 'red';
         msg.textContent = 'Preencha todos os 5 campos!';
         return;
       }
 
-      // 3. Envio para o próprio index.php via fetch POST
+      
       try {
         const resposta = await fetch('index.php', {
           method: 'POST',
