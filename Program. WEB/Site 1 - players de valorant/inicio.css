@@ -1,0 +1,21 @@
+body{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-style:oblique;
+}
+.login{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.email:hover,.senha:hover,.elo:hover,.btnEntrar:hover{
+    background-color: aqua;
+}
