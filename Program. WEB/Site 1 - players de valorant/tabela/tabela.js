@@ -57,3 +57,56 @@ tbody.innerHTML = `
 //         </tr>
 //     `;
 // }
+
+
+
+
+// console.log("JS RODANDO");
+
+// // 1. Lista com os players
+// let players = [
+//     {
+//         nome: "Lucas",
+//         conta: "Morant12",
+//         elo: "Ouro",
+//         idade: 18
+//     },
+//     {
+//         nome: "Daniel",
+//         conta: "DaniPro",
+//         elo: "Diamante",
+//         idade: 19
+//     },
+//     {
+//         nome: "Mateus",
+
+
+//         conta: "MatSniper",
+//         elo: "Ascendente",
+//         idade: 18
+//     },
+//     {
+//         nome: "João",
+//         conta: "JoaoVava",
+//         elo: "Platina",
+//         idade: 20
+//     }
+// ];
+
+// // 2. Pega a referência do tbody pelo ID que você colocou no HTML ("info")
+// const tabelaCorpo = document.getElementById("info");
+
+// // 3. Mapeia cada player para uma linha HTML e junta tudo sem vírgulas
+// let respostaMap = players.map(item => `
+//     <tr>
+//         <td>${item.nome}</td>
+//         <td>${item.conta}</td>
+//         <td>${item.elo}</td>
+//         <td>${item.idade}</td>
+//     </tr>
+// `).join("");
+
+// console.log(respostaMap);
+
+// // 4. Insere as linhas dentro do tbody
+// tabelaCorpo.innerHTML = respostaMap;

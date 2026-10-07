@@ -1,0 +1,36 @@
+body {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+div {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    width: 60%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+}

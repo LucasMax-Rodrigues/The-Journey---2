@@ -1,0 +1,28 @@
+body{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.box{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+
+.ano,.file,.cor,.nome,.btn{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.ano:hover, .file:hover, .cor:hover, .nome:hover, .btn:hover{
+    background-color: aquamarine;
+}
